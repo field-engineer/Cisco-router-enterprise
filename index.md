@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+Configure a router as Multipoint (Multibridge) 
 
-You can use the [editor on GitHub](https://github.com/field-engineer/Cisco-router-enterprise/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/field-engineer/Cisco-router-enterprise/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Setting up a router can be complicated, especially if you want to change the usual point-to-point configuration for a Multi-Point (Multibridge). In the following tutorial we will teach you how to configure a router as Multi-Point , so you can perform this action without having to resort to complicated manuals or an expert.
+Definition of Multipoint ( Multibridge )
+In a wireless network , Bridge Mode allows you to connect two or more devices simultaneously to an access point. Multipoint is the ability to make connections with several nodes of a network , so that you can access several wireless networks. In the specific case of a router with several local networks nearby, through direct communication with other access points or nearby routers.
+Multipoint configuration
+The simplest example is with three points, that is, our router will communicate with two more access points. Before configuring the router as Multi-Point , you have to enable the other two access points as bridge and point-to-point to our router, we will not describe it here but you can find it in the manual of these access points.
+Once this is done, you must copy the MAC address of your router and the other access points. Next, you connect your computer to the router and enter your web utility using the address 192.168.1.1 in the browser of your choice. After entering you have to change the LAN IP of the router, save the changes and exit the router, restart and re-enter with the new IP address.
+It's time to change the router to a Multipoint configuration . To do this, once inside the web application of the [Enterprise router](https://www.fieldengineer.com/blogs/top-seven-enterprise-router-vendors-consider-2018/), you should look for the option Wireless or a similar one (depends on the router model) and place the option Point to Multi-Point or a similar one. Then, you select or mark that option and in the MAC address box to connect, you place the addresses of the access points to which you wish to communicate with your Multi-Point configuration.
+To finish, save the changes and then restart the router. The configuration is already done and you will have to communicate in Multi-Point mode automatically .
+If for some reason the router does not allow you to connect with the desired access points, in the configuration do not place the MAC addresses of the access points, otherwise, check the option With AP Mode or similar. In this way, you will force the router to establish communication with any wireless access point that is within your  reach .
